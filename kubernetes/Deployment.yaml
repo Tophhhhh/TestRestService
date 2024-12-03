@@ -20,7 +20,7 @@ spec:
             - containerPort: 8080
           env:
             - name: spring.config.import
-              value: file:./config/application.properties
+              value: file:/./config/application.properties
           volumeMounts:
             - name: config-volume
               mountPath: /config/application.properties

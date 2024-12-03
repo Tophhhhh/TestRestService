@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-restservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: restservice
+  template:
+    metadata:
+      labels:
+        app: restservice
+    spec:
+      containers:
+        - name: restservice
+          image: restservice:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: spring.config.import
+              value: file:./config/application.properties
+          volumeMounts:
+            - name: config-volume
+              mountPath: /config/application.properties
+              subPath: application.properties
+      volumes:
+        - name: config-volume
+          configMap:
+            name: test-restservice-configmap

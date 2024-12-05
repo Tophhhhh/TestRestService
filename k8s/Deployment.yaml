@@ -25,9 +25,6 @@ spec:
             - name: config-volume
               mountPath: /config/
 #              subPath: application.properties
-#        - name: configwatcher
-#          image: ...
-#          imagePullPolicy: IfNotPresent
       volumes:
         - name: config-volume
           configMap:

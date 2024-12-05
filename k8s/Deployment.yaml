@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
         - name: restservice
-          image: restservice:v1.0.0
+          image: restservice:v1.0.1
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
           env:
             - name: spring.config.import
               value: file:/./config/application.properties
@@ -25,6 +25,9 @@ spec:
             - name: config-volume
               mountPath: /config/application.properties
               subPath: application.properties
+#        - name: configwatcher
+#          image: ...
+#          imagePullPolicy: IfNotPresent
       volumes:
         - name: config-volume
           configMap:

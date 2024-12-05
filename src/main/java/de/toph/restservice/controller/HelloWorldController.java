@@ -1,4 +1,4 @@
-package de.toph.testrestservice.controller;
+package de.toph.restservice.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

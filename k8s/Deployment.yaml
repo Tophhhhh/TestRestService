@@ -23,8 +23,8 @@ spec:
               value: file:/./config/application.properties
           volumeMounts:
             - name: config-volume
-              mountPath: /config/application.properties
-              subPath: application.properties
+              mountPath: /config/
+#              subPath: application.properties
 #        - name: configwatcher
 #          image: ...
 #          imagePullPolicy: IfNotPresent

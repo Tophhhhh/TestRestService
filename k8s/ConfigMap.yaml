@@ -2,7 +2,12 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-restservice-configmap
+  labels:
+    spring.cloud.kubernetes.config: "true"
+  annotations:
+    spring.cloud.kubernetes.configmap.apps: "test-restservice"
 data:
   application.properties: |
     spring.application.name=TestRestService
-    rest.service.test.value=Hat der refresh funktioniert? :)
+    rest.service.test.value=Dies ist ein test! :)
+    management.endpoints.web.exposure.include=refresh

@@ -9,5 +9,5 @@ metadata:
 data:
   application.properties: |
     spring.application.name=TestRestService
-    rest.service.test.value=Dies ist ein test! :)
+    rest.service.test.value=Test Numero 12
     management.endpoints.web.exposure.include=refresh

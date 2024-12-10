@@ -1,6 +1,7 @@
 # Anleitung
-## Voraussetzung
-- Aufgesetzter und lauffähiger Minikube
+> [!IMPORTANT]
+> Aufgesetzter und lauffähiger Minikube wird benötigt.
+> 
 ## Step by step
 1. Das Projekt sollte durch maven gebaut werden, damit der target Ordner up-to-date ist. 
 2. Als zweites muss das Image für die Anwendung gebaut werden, hierfür muss der Befehl 

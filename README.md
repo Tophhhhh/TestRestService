@@ -1,8 +1,6 @@
 # Anleitung
-___
 ## Voraussetzung
 - Aufgesetzter und lauffähiger Minikube
-___
 ## Step by step
 1. Das Projekt sollte durch maven gebaut werden, damit der target Ordner up-to-date ist. 
 2. Als zweites muss das Image für die Anwendung gebaut werden, hierfür muss der Befehl 
@@ -16,6 +14,6 @@ Nach den schritten können die k8s yaml files in Kubernetes hochgeladen werden
 2. k8s/Deployment
 3. k8s/Service
 4. k8s/configwatcher/WatcherDeployment
-___
+
 # Übersicht
 ![configwatcher](/resources/Diagram_Configwatcher.png)

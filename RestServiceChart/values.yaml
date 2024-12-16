@@ -36,3 +36,5 @@ Service:
   targetPort: 8082
   nodePort: 3000
   type: NodePort
+
+ConfigWatcher:

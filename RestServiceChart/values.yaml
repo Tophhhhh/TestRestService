@@ -18,7 +18,7 @@ Deployment:
   name: test-restservice
   replicas: 1
   app: restservice
-  image: restservice:v1.0.1
+  image: restservice:v1.0.0
   imagePullPolicy: IfNotPresent
   port: 8082
   env:

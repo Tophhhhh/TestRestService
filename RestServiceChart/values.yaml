@@ -1,0 +1,38 @@
+Configmap:
+  name: test-restservice-configmap
+  label:
+    kubernetes:
+      config: "true"
+  annotation:
+    kubernetes:
+      apps: "test-restservice"
+  application:
+    properties:
+      name: TestRestService
+      rest:
+        value: Pod Test
+      management:
+        endpoints: refresh
+
+Deployment:
+  name: test-restservice
+  replicas: 1
+  app: restservice
+  image: restservice:v1.0.1
+  imagePullPolicy: IfNotPresent
+  port: 8082
+  env:
+    - name: SPRING_CONFIG_IMPORT
+      value: file:/./config/application.properties
+  mount:
+      name: config-volume
+      mountPath: /config/
+
+Service:
+  name: test-restservice
+  app: restservice
+  protocol: TCP
+  port: 8082
+  targetPort: 8082
+  nodePort: 3000
+  type: NodePort

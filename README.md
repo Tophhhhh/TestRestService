@@ -1,7 +1,5 @@
 > [!TIP]
-> Dokumentationen: </br>
-> [Minikube](https://minikube.sigs.k8s.io/docs/) </br>
-> [Spring Config Watcher](https://docs.spring.io/spring-cloud-kubernetes/reference/spring-cloud-kubernetes-configuration-watcher.html)
+> Dokumentationen: [Minikube](https://minikube.sigs.k8s.io/docs/), [Spring Config Watcher](https://docs.spring.io/spring-cloud-kubernetes/reference/spring-cloud-kubernetes-configuration-watcher.html)
 
 > [!IMPORTANT]
 > Aufgesetzter Minikube oder Kubernetes cluster wird benötigt

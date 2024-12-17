@@ -21,7 +21,7 @@ Um die Testumgebung zum laufen zu bringen, müssen folgende Schritte erledigt we
 Folgende Befehle können hilfreich sein
 ```
 Bauen des Docker images:
-Docker build -t test-restservice:v1.0.0 .
+Docker build -t test-restservice:v1.0.1 .
 
 hochladen von Kubernetes Datein:
 kubectl apply -f [Datei]

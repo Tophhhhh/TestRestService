@@ -7,7 +7,7 @@
 > Aufgesetzter Minikube oder Kubernetes cluster wird benötigt
 
 # Anleitung
-Um die Testumgebung aufzusetzen müssen folgende Schritte erledigt werden.
+Um die Testumgebung zum laufen zu bringen, müssen folgende Schritte erledigt werden.
 1. Anwendung als Docker image bauen
 2. Docker image in Kubernetes/Minikube hochladen
 3. Die Kubernetes files hochladen 
